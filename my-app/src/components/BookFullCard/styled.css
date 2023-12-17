@@ -1,0 +1,175 @@
+.bookDetail-wrapper {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  width: 100vw;
+  margin: auto;
+  gap: 55px;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+}
+
+.goBack {
+  right: 50px;
+  top: 140px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  /* margin-right: 50px; */
+  border: none;
+}
+
+.goBack:hover {
+  filter: invert();
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.goBack::before {
+  content: "X";
+}
+
+.image-block {
+  width: 50%;
+  /* height: 100%; */
+  /* max-height: 1000vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f2f3;
+  /* flex-grow: 30px; */
+  /* border: 1px solid grey; */
+}
+
+.image-block img {
+  transform: scale(3);
+  box-shadow: inset;
+  box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.2);
+  /* height: 20%; */
+}
+
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* justify-content: space-between; */
+  gap: 30px;
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.bookDescrption {
+  width: 90%;
+  text-align: start;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -1px;
+  border: 1px solid grey;
+  /* margin-top: 20px; */
+  padding: 20px;
+  padding-right: 1vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, serif;
+  max-height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.bookCategories {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+.bookTitle {
+  text-align: start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, serif;
+  font-weight: bolder;
+  font-size: 27px;
+  /* margin-bottom: 20px; */
+  /* height: 20px; */
+  /* width: 20em; */
+  /* text-overflow: ellipsis; */
+}
+
+.bookAuthors {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, serif;
+  text-align: start;
+  text-decoration: underline;
+  font-weight: lighter;
+  color: #474747;
+  font-size: 20px;
+  /* margin-bottom: 25px; */
+}
+
+/* .goBack {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+} */
+
+@media screen and (max-width: 1400px) {
+  .image-block img {
+    transform: scale(2.5);
+    box-shadow: inset;
+    box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.2);
+    /* height: 20%; */
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .image-block img {
+    transform: scale(2);
+    box-shadow: inset;
+    box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.2);
+    /* height: 20%; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .image-block img {
+    transform: scale(1.5);
+    box-shadow: inset;
+    box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.2);
+    /* height: 20%; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-block img {
+    transform: scale(1);
+    box-shadow: inset;
+    box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.2);
+    /* height: 20%; */
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .bookDetail-wrapper {
+    display: block;
+  }
+  .image-block {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .detail-block {
+    width: 90%;
+    margin: auto;
+  }
+  .goBack {
+    position: static;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+  .goBack::before {
+    content: "Go back";
+  }
+}

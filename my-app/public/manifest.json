@@ -1,0 +1,8 @@
+{
+    "short_name": "Library",
+    "name": "Search for books",
+    "start_url": "./testTask",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
